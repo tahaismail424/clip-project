@@ -1,0 +1,29 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  19%|█▉        | 19/100 [00:00<00:00, 143.57it/s]Loading weights:  42%|████▏     | 42/100 [00:00<00:00, 179.58it/s]Loading weights:  78%|███████▊  | 78/100 [00:00<00:00, 252.39it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 258.91it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Train Epoch: [0]  [0/7]  eta: 0:04:04    time: 34.8700  data: 2.2390  max mem: 570
+Train Epoch: [0]  [6/7]  eta: 0:00:05    time: 5.0551  data: 0.3199  max mem: 570
+Train Epoch: [0] Total time: 0:00:35 (5.0902 s / it)
+Train Epoch: [0]  [0/7]  eta: 0:01:58    time: 16.8768  data: 8.4505  max mem: 2375
+Train Epoch: [0]  [6/7]  eta: 0:00:02    time: 2.5637  data: 1.2073  max mem: 2576
+Train Epoch: [0] Total time: 0:00:17 (2.5670 s / it)
+{"case": "adamw_path(no_l2)", "loss_ref": 9.861222267150879, "loss_ga": 9.861223220825195, "loss_abs_diff": 9.5367431640625e-07, "grad_rel_err_global": 0.001617373784403947, "grad_rel_err_worst_param": 0.5404902100563049, "ref_grad_norm": 232.16976928710938, "PASS": false}
+stats: {"loss_contrastive": 9.861223220825195, "loss_l2": 0.0, "loss_total": 9.861223220825195, "time_pass1_s": 35.755337953567505, "time_loss_s": 2.260509729385376, "time_pass2_s": 17.969386100769043, "grad_norm_image_enc": 173.81913579178757, "grad_norm_text_enc": 46.05748930798676, "grad_norm_proj": 146.72515812246382, "grad_norm": 232.08329607022824}
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1935  data: 0.1646  max mem: 12598
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.0507  data: 0.0236  max mem: 12598
+Train Epoch: [0] Total time: 0:00:00 (0.0543 s / it)
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1930  data: 0.1504  max mem: 12598
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.1317  data: 0.0216  max mem: 12598
+Train Epoch: [0] Total time: 0:00:00 (0.1355 s / it)
+{"case": "lbfgs_path(with_l2)", "loss_ref": 15.775419235229492, "loss_ga": 15.775419235229492, "loss_abs_diff": 0.0, "grad_rel_err_global": 0.001617373912768301, "grad_rel_err_worst_param": 0.5404902100563049, "ref_grad_norm": 232.16976928710938, "PASS": false}
+stats: {"loss_contrastive": 9.861223220825195, "loss_l2": 5.914196491241455, "loss_total": 15.775419235229492, "time_pass1_s": 0.38102054595947266, "time_loss_s": 0.004374504089355469, "time_pass2_s": 0.9491977691650391, "grad_norm_image_enc": 173.81913183458457, "grad_norm_text_enc": 46.057489260103736, "grad_norm_proj": 146.72515812246382, "grad_norm": 232.08329309697257}
+SOME CHECK FAILED

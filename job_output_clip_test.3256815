@@ -1,0 +1,82 @@
+Could not reach the Hub ([Errno 101] Network is unreachable). Using cached commit hash for 'distilbert-base-uncased'.
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Could not reach the Hub ([Errno 101] Network is unreachable). Using cached commit hash for 'distilbert-base-uncased'.
+Creating retrieval dataset
+len of train_dataset: 100000
+len of coco val: 5000
+Creating model
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 22/100 [00:00<00:00, 200.34it/s]Loading weights:  55%|█████▌    | 55/100 [00:00<00:00, 211.47it/s]Loading weights:  82%|████████▏ | 82/100 [00:00<00:00, 203.70it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 166.43it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Start training
+Traceback (most recent call last):
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/./bimodal_exps/clip.py", line 790, in <module>
+    main(args)
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/./bimodal_exps/clip.py", line 579, in main
+    train_stats = train(model, train_loader, optimizer, tokenizer, epoch, max_epoch, warmup_steps, device, lr_scheduler, 
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/./bimodal_exps/clip.py", line 118, in train
+    for i,(image, text, idx, text_idx) in enumerate(metric_logger.log_every(data_loader, print_freq, header)):
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/bimodal_exps/utils.py", line 137, in log_every
+    for obj in iterable:
+               ^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 725, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1531, in _next_data
+    return self._process_data(data, worker_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py", line 1569, in _process_data
+    data.reraise()
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/_utils.py", line 804, in reraise
+    raise exception
+FileNotFoundError: Caught FileNotFoundError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/worker.py", line 375, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/torch/utils/data/dataset.py", line 443, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/bimodal_exps/dataset/caption_dataset.py", line 40, in __getitem__
+    image = Image.open(image_path).convert('RGB')
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/.venv/lib/python3.12/site-packages/PIL/Image.py", line 3654, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../data/cc3m_subset_100k/cc_data/train/528/1968528.jpg'
+

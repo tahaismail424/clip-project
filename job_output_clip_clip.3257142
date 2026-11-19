@@ -1,0 +1,67 @@
+Could not reach the Hub ([Errno 101] Network is unreachable). Using cached commit hash for 'distilbert-base-uncased'.
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main/additional_chat_templates
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 1s [Retry 1/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 2s [Retry 2/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 4s [Retry 3/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 8s [Retry 4/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Retrying in 8s [Retry 5/5].
+'[Errno 101] Network is unreachable' thrown while requesting GET https://huggingface.co/api/models/distilbert-base-uncased/tree/main
+Could not reach the Hub ([Errno 101] Network is unreachable). Using cached commit hash for 'distilbert-base-uncased'.
+Creating retrieval dataset
+len of train_dataset: 100000
+len of coco val: 5000
+Creating model
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 22/100 [00:00<00:00, 211.47it/s]Loading weights:  55%|█████▌    | 55/100 [00:00<00:00, 279.88it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 347.02it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Start training
+Train Epoch: [0]  [  0/781]  eta: 18:29:40  lr: 0.000010  lr_temp_net: 0.00000100  loss_ita: 10.2985  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 85.2501  data: 20.4763  max mem: 8349
+Train Epoch: [0]  [ 50/781]  eta: 0:23:35  lr: 0.000010  lr_temp_net: 0.00000100  loss_ita: 7.1789  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.3093  data: 0.0833  max mem: 9043
+Train Epoch: [0]  [100/781]  eta: 0:13:30  lr: 0.000010  lr_temp_net: 0.00000100  loss_ita: 5.6254  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4603  data: 0.2320  max mem: 9043
+Train Epoch: [0]  [150/781]  eta: 0:09:39  lr: 0.000048  lr_temp_net: 0.00000480  loss_ita: 3.8198  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.3388  data: 0.1126  max mem: 9043
+Train Epoch: [0]  [200/781]  eta: 0:07:37  lr: 0.000048  lr_temp_net: 0.00000480  loss_ita: 3.3214  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.3649  data: 0.1365  max mem: 9043
+Train Epoch: [0]  [250/781]  eta: 0:06:21  lr: 0.000086  lr_temp_net: 0.00000860  loss_ita: 2.7979  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4646  data: 0.2357  max mem: 9043
+Train Epoch: [0]  [300/781]  eta: 0:05:22  lr: 0.000086  lr_temp_net: 0.00000860  loss_ita: 2.7255  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.5118  data: 0.2842  max mem: 9043
+Train Epoch: [0]  [350/781]  eta: 0:04:33  lr: 0.000124  lr_temp_net: 0.00001240  loss_ita: 2.5136  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.3747  data: 0.1480  max mem: 9043
+Train Epoch: [0]  [400/781]  eta: 0:03:53  lr: 0.000124  lr_temp_net: 0.00001240  loss_ita: 2.3037  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4099  data: 0.1811  max mem: 9043
+Train Epoch: [0]  [450/781]  eta: 0:03:18  lr: 0.000162  lr_temp_net: 0.00001620  loss_ita: 2.3614  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.5276  data: 0.3008  max mem: 9043
+Train Epoch: [0]  [500/781]  eta: 0:02:43  lr: 0.000162  lr_temp_net: 0.00001620  loss_ita: 2.5024  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4929  data: 0.2665  max mem: 9043
+Train Epoch: [0]  [550/781]  eta: 0:02:21  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 2.3528  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4821  data: 0.1874  max mem: 9043
+Train Epoch: [0]  [600/781]  eta: 0:01:49  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 1.9367  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4738  data: 0.2472  max mem: 9043
+Train Epoch: [0]  [650/781]  eta: 0:01:18  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 2.0216  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.5347  data: 0.3081  max mem: 9043
+Train Epoch: [0]  [700/781]  eta: 0:00:47  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 1.6230  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4999  data: 0.2727  max mem: 9043
+Train Epoch: [0]  [750/781]  eta: 0:00:17  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 1.8011  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4489  data: 0.2208  max mem: 9043
+Train Epoch: [0]  [780/781]  eta: 0:00:00  lr: 0.000200  lr_temp_net: 0.00002000  loss_ita: 1.9148  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000  time: 0.4841  data: 0.2572  max mem: 9043
+Train Epoch: [0] Total time: 0:07:29 (0.5760 s / it)
+Averaged stats: lr: 0.0001  lr_temp_net: 0.0000  loss_ita: 3.1424  avg_image_tau: 0.0100  avg_text_tau: 0.0100  cur_eta: 0.0000  grad_tau_image: 0.0000  grad_tau_text: 0.0000  b_I: 0.0000  b_T: 0.0000  v: 0.0000  lamda: 0.0000  weights_image_pos: 0.0000  weights_text_pos: 0.0000
+Traceback (most recent call last):
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/./bimodal_exps/clip.py", line 790, in <module>
+    main(args)
+  File "/scratch/user/tahaismail424/coursework/cs633/clip-project/csce689_iSogCLR/./bimodal_exps/clip.py", line 640, in main
+    **{f'val_{k}': v for k, v in val_result_coco.items()},
+                                 ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'val_result_coco' where it is not associated with a value

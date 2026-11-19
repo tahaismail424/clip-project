@@ -1,0 +1,35 @@
+Loading weights:   0%|          | 0/100 [00:00<?, ?it/s]Loading weights: 100%|██████████| 100/100 [00:00<00:00, 13948.93it/s]
+[transformers] [1mDistilBertModel LOAD REPORT[0m from: distilbert-base-uncased
+Key                     | Status     |  | 
+------------------------+------------+--+-
+vocab_layer_norm.weight | UNEXPECTED |  | 
+vocab_transform.weight  | UNEXPECTED |  | 
+vocab_projector.bias    | UNEXPECTED |  | 
+vocab_transform.bias    | UNEXPECTED |  | 
+vocab_layer_norm.bias   | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  worst params (rel_err, |grad|, name): [(0.3692, 0.0, 'text_encoder.transformer.layer.4.attention.k_lin.bias'), (0.4062, 0.0, 'text_encoder.transformer.layer.0.attention.k_lin.bias'), (0.4063, 0.0, 'text_encoder.transformer.layer.5.attention.k_lin.bias'), (0.5512, 0.0, 'text_encoder.transformer.layer.2.attention.k_lin.bias')]
+{"case": "NOISE_FLOOR ref_fullbatch vs ref_minibatch", "loss_ref": 9.861222267150879, "loss_ga": 9.861223220825195, "loss_abs_diff": 9.5367431640625e-07, "grad_rel_err_global": 0.001616288207064543, "grad_rel_err_worst_param": 0.5511626601219177, "ref_grad_norm": 232.16976928710938, "PASS": false}
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1925  data: 0.1630  max mem: 12912
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.0504  data: 0.0233  max mem: 12912
+Train Epoch: [0] Total time: 0:00:00 (0.0542 s / it)
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1912  data: 0.1480  max mem: 12912
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.1302  data: 0.0212  max mem: 12912
+Train Epoch: [0] Total time: 0:00:00 (0.1339 s / it)
+  worst params (rel_err, |grad|, name): [(0.3657, 0.0, 'text_encoder.transformer.layer.1.attention.k_lin.bias'), (0.3746, 0.0, 'text_encoder.transformer.layer.4.attention.k_lin.bias'), (0.453, 0.0, 'text_encoder.transformer.layer.2.attention.k_lin.bias'), (0.5405, 0.0, 'text_encoder.transformer.layer.5.attention.k_lin.bias')]
+{"case": "adamw_path vs ref_fullbatch", "loss_ref": 9.861222267150879, "loss_ga": 9.861223220825195, "loss_abs_diff": 9.5367431640625e-07, "grad_rel_err_global": 0.001617373784403947, "grad_rel_err_worst_param": 0.5404902100563049, "ref_grad_norm": 232.16976928710938, "PASS": false}
+  worst params (rel_err, |grad|, name): [(0.2626, 0.0, 'text_encoder.transformer.layer.4.attention.k_lin.bias'), (0.2971, 0.0, 'text_encoder.transformer.layer.1.attention.k_lin.bias'), (0.316, 0.0, 'text_encoder.transformer.layer.0.attention.k_lin.bias'), (0.4353, 0.0, 'text_encoder.transformer.layer.2.attention.k_lin.bias')]
+{"case": "adamw_path vs ref_minibatch (exact test)", "loss_ref": 9.861223220825195, "loss_ga": 9.861223220825195, "loss_abs_diff": 0.0, "grad_rel_err_global": 3.5583101604049502e-06, "grad_rel_err_worst_param": 0.4352920949459076, "ref_grad_norm": 232.0836181640625, "PASS": true}
+stats: {"loss_contrastive": 9.861223220825195, "loss_l2": 0.0, "loss_total": 9.861223220825195, "time_pass1_s": 0.37995290756225586, "time_loss_s": 0.004845142364501953, "time_pass2_s": 0.9387834072113037, "grad_norm_image_enc": 173.81913579178757, "grad_norm_text_enc": 46.05748930798676, "grad_norm_proj": 146.72515812246382, "grad_norm": 232.08329607022824}
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1856  data: 0.1562  max mem: 12913
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.0494  data: 0.0224  max mem: 12913
+Train Epoch: [0] Total time: 0:00:00 (0.0530 s / it)
+Train Epoch: [0]  [0/7]  eta: 0:00:01    time: 0.1984  data: 0.1546  max mem: 12913
+Train Epoch: [0]  [6/7]  eta: 0:00:00    time: 0.1317  data: 0.0222  max mem: 12913
+Train Epoch: [0] Total time: 0:00:00 (0.1356 s / it)
+  worst params (rel_err, |grad|, name): [(0.2626, 0.0, 'text_encoder.transformer.layer.4.attention.k_lin.bias'), (0.2971, 0.0, 'text_encoder.transformer.layer.1.attention.k_lin.bias'), (0.316, 0.0, 'text_encoder.transformer.layer.0.attention.k_lin.bias'), (0.4353, 0.0, 'text_encoder.transformer.layer.2.attention.k_lin.bias')]
+{"case": "lbfgs_path vs ref_minibatch (exact test)", "loss_ref": 15.775419235229492, "loss_ga": 15.775419235229492, "loss_abs_diff": 0.0, "grad_rel_err_global": 3.558634200070029e-06, "grad_rel_err_worst_param": 0.4352920949459076, "ref_grad_norm": 232.0836181640625, "PASS": true}
+stats: {"loss_contrastive": 9.861223220825195, "loss_l2": 5.914196491241455, "loss_total": 15.775419235229492, "time_pass1_s": 0.37206554412841797, "time_loss_s": 0.004526853561401367, "time_pass2_s": 0.9493284225463867, "grad_norm_image_enc": 173.81913183458457, "grad_norm_text_enc": 46.057489260103736, "grad_norm_proj": 146.72515812246382, "grad_norm": 232.08329309697257}
+ALL PASS
