@@ -1,3 +1,7 @@
 [submodule "csce689_iSogCLR"]
 	path = csce689_iSogCLR
 	url = git@github.com:tahaismail424/csce689_iSogCLR.git
+[submodule "csce633-iSogCLR-fastClip"]
+	path = csce633-iSogCLR-fastClip
+	url = https://github.com/A-Drishti/csce633-iSogCLR-fastClip.git
+	branch = main
