@@ -1,4 +1,4 @@
-# CSCE 633 Project 1: iSogCLR vs FastCLIP-v3 with AdamW, Lion and LAMB
+# CSCE 633 Project 1: iSogCLR vs FastCLIP-v3 with AdamW, Lion and LAMB --Ananya D
 
 My part of the group project "Improving CLIP Training" (CSCE 633, Fall 2026). I compare two global contrastive losses, **iSogCLR** and **FastCLIP-v3**, each trained with three optimizers: **AdamW**, **Lion** and **LAMB**. I also tune the learning rate, weight decay and the temperature regularizer ρ.
 
